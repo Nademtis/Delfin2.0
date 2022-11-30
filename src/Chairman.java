@@ -29,6 +29,7 @@ public class Chairman {
     public void getFitnessMembers() {
         System.out.println(filehandler.getFitnessList());
     }
+
     public void getCompMembers() {
         System.out.println(filehandler.getCompList());
     }
@@ -40,13 +41,13 @@ public class Chairman {
         String lName = in.nextLine();
         System.out.println("Insert members birth year: ");
         String birthYear = in.nextLine();
-        System.out.println("Does the user want an (1)Active or (false)Passive membership?");
+        System.out.println("Does the user want an (1)Active or (2)Passive membership?");
         int i = in.nextInt();
         boolean isActive = (i == 1);
         System.out.println("Does the user want to have a (1)Fitness or (2)Competition membership?");
         i = in.nextInt();
-        boolean isComp = (i == 1);
-        boolean isFitness = (i == 2);
+        boolean isFitness = (i == 1);
+        boolean isComp = (i == 2);
         //TODO IF isComp=true skal brugeren vælge en dicipline, som skal gemmes med
 
         String newMemberData = fName + ";" + lName + ";" + birthYear + ";" + isActive + ";" + isFitness + ";" + isComp + ";";

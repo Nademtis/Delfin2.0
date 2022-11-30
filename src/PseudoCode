@@ -27,7 +27,7 @@ Menu
 
 Run
 
-Staff (abstract)
+Staff? (abstract)
     Trainer
     Chairman
     Cashier
@@ -38,11 +38,11 @@ Sorter
 File handler og chairman
 
 
-TODO skal man kunne oprette sig selv som active/passive
+skal man kunne oprette sig selv som active/passive
 
-    TODO return Comp array
-    TODO return Fitness array
-    return passive array
+    return Comp array
+    return Fitness array
+    return AllMember array
     TODO return active array?
 
 
