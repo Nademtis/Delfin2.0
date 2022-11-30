@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Chairman {
+    Ui ui = new Ui();
     Scanner in = new Scanner(System.in);
 
     public void createMember() throws IOException {
