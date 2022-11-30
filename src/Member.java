@@ -19,6 +19,18 @@ public class Member {
         return memberID;
     }
 
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public String getfName() {
+        return fName;
+    }
+
+    public String getlName() {
+        return lName;
+    }
+
     @Override
     public String toString() {
         return "Member{" +
