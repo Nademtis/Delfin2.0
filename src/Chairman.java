@@ -49,11 +49,38 @@ public class Chairman {
         boolean isFitness = (i == 1);
         boolean isComp = (i == 2);
         //TODO IF isComp=true skal brugeren vælge en dicipline, som skal gemmes med
-
-        String newMemberData = fName + ";" + lName + ";" + birthYear + ";" + isActive + ";" + isFitness + ";" + isComp + ";";
-        // ser sådan ud: "0;lars;larsen;2005;true;false;true"
-
-        //System.out.println(newMemberData);
+        String compChoice = "noDiscipline";
+        if (isComp == true) {
+            compChoice = compChoice();
+        }
+        String newMemberData = fName + ";" + lName + ";" + birthYear + ";" + isActive + ";" + isFitness + ";" + isComp + ";"
+                + compChoice + ";" + "0.0" + ";";
+        //System.out.println(newMemberData); //For debugging
         return newMemberData;
+    }
+
+    private String compChoice() {
+        String choice = "";
+
+        Menu compMenu = new Menu("Choose the discipline", "Please type a number between 1 and 5: \n",
+                new String[]{"1. Crawl", "2. Breaststroke", "3. Butterfly", "4. Backstroke", "5. Medley"});
+        compMenu.printMenu();
+        int numChoice = -1;
+        boolean validChoice = false;
+        while (!validChoice) {
+            if (numChoice < 1 || numChoice > 5)
+                numChoice = compMenu.readChoice();
+            else
+                validChoice = true;
+        }
+        switch (numChoice) {
+            case 1 -> choice = "Crawl";
+            case 2 -> choice = "Breaststroke";
+            case 3 -> choice = "Butterfly";
+            case 4 -> choice = "Backstroke";
+            case 5 -> choice = "Medley";
+        }
+
+        return choice;
     }
 }

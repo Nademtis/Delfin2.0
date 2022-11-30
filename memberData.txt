@@ -5,3 +5,5 @@
 4;Laurits;comp;1900;false;true;true;
 5;Lars;comp;2009;false;true;true;
 6;active;fitness;2005;true;false;true;
+7;lars;larsen;2010;true;false;true;Breaststroke;0.0;
+8;lars;test;1455;true;true;false;noDiscipline;0.0;
