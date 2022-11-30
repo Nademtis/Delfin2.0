@@ -1,0 +1,3 @@
+0;lars;larsen;2005;false;true;false;
+1;passive;comp;1234;false;true;false;
+2;active;fitness;124;true;false;true;
