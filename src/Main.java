@@ -9,6 +9,9 @@ public class Main {
 
     public void run() throws IOException {
 
+        Coach c = new Coach();
+        c.viewAgeSortedTeams();
+
         String[] chairmanMenuChoices = {"1.Create new member", "2.Check member with given memberID",
                 "3.Print all fitness members", "4.Print all fitness members"};
         Menu chairmanMenu = new Menu("Chairman Menu", "Pick the number:", chairmanMenuChoices);
