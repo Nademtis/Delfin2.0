@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Chairman {
     Ui ui = new Ui();
     Scanner in = new Scanner(System.in);
-
     Filehandler filehandler = new Filehandler();
 
     public void createMember() throws IOException {
