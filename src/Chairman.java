@@ -6,13 +6,13 @@ public class Chairman {
     Ui ui = new Ui();
     Scanner in = new Scanner(System.in);
 
+    Filehandler filehandler = new Filehandler();
+
     public void createMember() throws IOException {
         int newId = filehandler.nextAvailableMemberId();
         filehandler.saveNewMemberInFile(userInputForNewMember());
         System.out.println("New member was added with the ID:" + newId);
     }
-
-    Filehandler filehandler = new Filehandler();
 
     public void checkMember() {
         ArrayList<Member> memberList = filehandler.getAllMembersList();

@@ -63,7 +63,6 @@ public class Filehandler {
     }
 
     private void updateMemberList() {
-        //ArrayList<Member> memberList = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
             String lineRead = reader.readLine();
@@ -75,7 +74,6 @@ public class Filehandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //return memberList;
     }
 
     private void updateFitnessList() {
@@ -130,7 +128,6 @@ public class Filehandler {
             FitnessSwimmer newFitnessMember = new FitnessSwimmer(memberID, fName, lName, birthYear);
             fitnessList.add(newFitnessMember);
         }
-
     }
 
     private void stringToComp(String compString) {
