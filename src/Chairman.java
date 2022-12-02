@@ -1,11 +1,44 @@
+import java.io.File;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Chairman {
     Ui ui = new Ui();
     Scanner in = new Scanner(System.in);
     Filehandler filehandler = new Filehandler();
+
+    public void chairmanMenu() throws IOException {
+        String[] chairmanMenuChoices = {"1. Create new member", "2. Check member with given memberID",
+                "3. Print all fitness members", "4. Print all fitness members", "9. Exit chairman menu"};
+        Menu chairmanMenu = new Menu("Chairman Menu", "Pick the number:", chairmanMenuChoices);
+        boolean runWhile = true;
+        do {
+            chairmanMenu.printMenu();
+            switch (chairmanMenu.readChoice()) {
+                case 1:
+                    createMember();
+                    break;
+                case 2:
+                    checkMember();
+                    break;
+                case 3:
+                    getFitnessMembers();
+                    break;
+                case 4:
+                    getCompMembers();
+                    break;
+                case 9:
+                    System.out.println("Going back to main menu...");
+                    runWhile = false;
+                default:
+                    System.out.println("Invalid choice");
+                    break;
+            }
+        } while (runWhile);
+    }
 
     public void createMember() throws IOException {
         int newId = filehandler.nextAvailableMemberId();
@@ -35,6 +68,7 @@ public class Chairman {
     }
 
     private String userInputForNewMember() {
+
         System.out.println("Insert members first name: ");
         String fName = in.nextLine();
         System.out.println("Insert members last name: ");
@@ -53,8 +87,18 @@ public class Chairman {
         if (isComp == true) {
             compChoice = compChoice();
         }
+        //TODO giv member en mulighed for at betal on the spot
+        System.out.println("Has the user payed? Write true/false");
+        boolean hasPayed = Boolean.parseBoolean(in.nextLine());
+
+//        System.out.println("Date for registration: ");
+//        //LocalDateTime.now().getYear()
+//        System.out.println("Has the member payed?");
+//
+//        // Print to see what it returns System.out.println(LocalDateTime.now().getYear());
+
         String newMemberData = fName + ";" + lName + ";" + birthYear + ";" + isActive + ";" + isFitness + ";" + isComp + ";"
-                + compChoice + ";" + "0.0" + ";";
+                + compChoice + ";" + "0.0" + ";" + hasPayed + ";" ;
         //System.out.println(newMemberData); //For debugging
         return newMemberData;
     }

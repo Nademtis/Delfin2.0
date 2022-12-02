@@ -1,6 +1,12 @@
 public class CompSwimmer extends Member {
-    public CompSwimmer(int memberID, String fName, String lName, int birthYear) {
+
+    private double pb;
+    private String discipline;
+
+    public CompSwimmer(int memberID, String fName, String lName, int birthYear, String discipline, double pb) {
         super(memberID, fName, lName, birthYear);
+        this.discipline = discipline;
+        this.pb = pb;
     }
 
 }

@@ -5,19 +5,19 @@ public class Coach {
     Ui ui = new Ui();
     Filehandler filehandler = new Filehandler();
 
-    public void menu() {
+    public void coachMenu() {
         Menu cMenu = new Menu("---COACH MENU---", "...", new String[]{"1. View teams sorted by age",
                 "2. Register new personal records", "etc"});
-        cMenu.printMenu();
-        int choice = cMenu.readChoice();
-
+        //int choice = cMenu.readChoice();
+        boolean runWhile = true;
         do {
-            switch (choice) {
-                case 1 -> System.out.println("View team sorted by age"); //TODO teamsSortedByAge();
-                case 2 -> System.out.println("Register new Record");    //TODO RegisterNewRecord();
+            cMenu.printMenu();
+            switch (cMenu.readChoice()) {
+                case 1 -> viewAgeSortedTeams();
+                case 2 -> System.out.println("Register new personal best");    //TODO RegisterNewRecord();
+                default -> runWhile = false;
             }
-        }while(0<1);
-
+        }while(runWhile);
     }
 
 //Method written by Emil, Laurits & Mathias
@@ -39,8 +39,5 @@ public class Coach {
                 ui.println(compList.get(i).getfName() + " " + compList.get(i).getlName());
             }
         }
-
     }
-
-
 }

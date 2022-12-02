@@ -31,6 +31,7 @@ public class Menu {
                 scanner.nextLine();
             }
         }
+//        scanner.nextLine();
         return choice;
     }
 }
