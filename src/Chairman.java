@@ -103,6 +103,7 @@ public class Chairman {
                 + compChoice + ";" + "0.0" + ";" + hasPayed + ";" ;
         //System.out.println(newMemberData); //For debugging
         return newMemberData;
+
     }
 
 

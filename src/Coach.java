@@ -1,6 +1,7 @@
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
+//TODO Add editFile so he can change the record time for each ( f.editMember(memberId, 9, "true");) - Laurits & Martin
 public class Coach {
     Ui ui = new Ui();
     Filehandler filehandler = new Filehandler();

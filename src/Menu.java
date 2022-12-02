@@ -26,6 +26,7 @@ public class Menu {
             System.out.print(leadText);
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
+                scanner.nextLine();
                 validChoice = true;
             } else {
                 scanner.nextLine();

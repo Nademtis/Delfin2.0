@@ -5,6 +5,7 @@ public class Member {
     private int birthYear;
     private int memberID;
     private boolean isJunior = false;
+    private boolean hasPaid;
 
     private boolean isActive;
 
