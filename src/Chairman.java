@@ -77,9 +77,11 @@ public class Chairman {
         String birthYear = in.nextLine();
         System.out.println("Does the user want an (1)Active or (2)Passive membership?");
         int i = in.nextInt();
+        in.nextLine();//Scannerbug
         boolean isActive = (i == 1);
         System.out.println("Does the user want to have a (1)Fitness or (2)Competition membership?");
         i = in.nextInt();
+        in.nextLine();//Scannerbug
         boolean isFitness = (i == 1);
         boolean isComp = (i == 2);
         //TODO IF isComp=true skal brugeren vælge en dicipline, som skal gemmes med
@@ -102,6 +104,8 @@ public class Chairman {
         //System.out.println(newMemberData); //For debugging
         return newMemberData;
     }
+
+
 
     private String compChoice() {
         String choice = "";

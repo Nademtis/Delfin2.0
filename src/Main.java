@@ -13,8 +13,8 @@ public class Main {
         Menu mainMenu = new Menu("Welcome back", "Pick the number:", MenuChoices);
         boolean runWhile = true;
         do {
-            chairmanMenu.printMenu();
-            switch (chairmanMenu.readChoice()) {
+            mainMenu.printMenu();
+            switch (mainMenu.readChoice()) {
                 case 1:
                     new Chairman().chairmanMenu();
                     break;
