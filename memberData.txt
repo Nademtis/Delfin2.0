@@ -2,8 +2,8 @@
 1;lars;test;1234;false;true;false;noDiscipline;0.0;true;
 2;testeroni;test;1234;false;true;false;0.0;true;
 3;emil;Allund;2000;true;true;false;noDiscipline;0.0;true;
-4;hej;brian;1999;true;true;false;noDiscipline;0.0;true;
-5;lars;larsenigen;2005;true;true;false;noDiscipline;0.0;true;
+4;hej;brian;1999;true;true;false;noDiscipline;7.0;true;
+5;lars;larsenigen;2005;true;true;false;noDiscipline;4.9;true;
 6;test;Larsen;2007;false;false;true;Crawl;0.0;true;
 7;hej';igen;1000;false;false;true;Breaststroke;0.0;true;
 8;Lau;riii;2001;true;false;true;Butterfly;0.0;true;
@@ -11,6 +11,12 @@
 10;ikke;betalt mand;1234;false;true;false;noDiscipline;0.0;true;
 11;ikke;betalt;1234;false;true;false;noDiscipline;0.0;false;
 12;gf;gf;1234;true;true;false;noDiscipline;0.0;false;
-13;hej;mand;1234;false;false;true;Crawl;0.0;true;
+13;hej;mand;1234;false;false;true;Crawl;7.0;true;
 14;g;g;2345;false;true;false;noDiscipline;0.0;true;
-15;Patrick;theMan;1985;true;false;true;Breaststroke;0.0;false;
+15;Patrick;theMan;1985;true;false;true;Breaststroke;15.2;false;
+16;Semi;Peter;2040;false;false;true;Medley;4.20;false;
+17;Jacbo;abba;1907;true;true;false;noDiscipline;0.0;true;
+18;Johnny;Sins;1965;true;true;false;noDiscipline;0.9;true;
+19;Ham;Der;1234;false;false;true;Crawl;8.0;true;
+20;Torben;Svensen;1234;false;false;true;Crawl;6.0;true;
+21;Herman;Hermansen;1234;false;false;true;Crawl;9.0;true;

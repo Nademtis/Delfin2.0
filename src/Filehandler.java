@@ -4,6 +4,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Filehandler {
 
@@ -11,6 +12,7 @@ public class Filehandler {
     private ArrayList<Member> memberList = new ArrayList<>();
     private ArrayList<CompSwimmer> compList = new ArrayList<>();
     private ArrayList<FitnessSwimmer> fitnessList = new ArrayList<>();
+    Scanner in = new Scanner(System.in);
 
     //TODO skal loadFile() metoden below bruges? - HVIS saveNewMemberInFile() laver en ny memberData.txt, så behøver man ikke loadFile()-
 

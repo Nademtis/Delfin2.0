@@ -9,5 +9,11 @@ public class CompSwimmer extends Member {
         this.pb = pb;
     }
 
+    public double getPb(){
+        return pb;
+    }
 
+    public String getDiscipline() {
+        return discipline;
+    }
 }

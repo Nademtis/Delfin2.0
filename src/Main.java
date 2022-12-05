@@ -3,8 +3,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        //new Filehandler().editFile(2,2);
         new Main().run();
+//        new Coach().viewTop5();
+
     }
 
     private void run() throws IOException {
