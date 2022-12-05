@@ -8,7 +8,7 @@ public class Coach {
 
     public void coachMenu() {
         Menu cMenu = new Menu("---COACH MENU---", "...", new String[]{"1. View teams sorted by age",
-                "2. Register new personal records", "etc"});
+                "2. View top 5", "3. Register new personal records", "4. View swimmers personal record"});
         //int choice = cMenu.readChoice();
         boolean runWhile = true;
         do {

@@ -1,4 +1,4 @@
-0;Lars;Larsen;2010;false;false;true;Medley;0.0;true;
+0;Lars;Larsen;2010;false;false;true;Medley;6.9;true;
 1;lars;test;1234;false;true;false;noDiscipline;0.0;true;
 2;testeroni;test;1234;false;true;false;0.0;true;
 3;emil;Allund;2000;true;true;false;noDiscipline;0.0;true;
@@ -6,8 +6,8 @@
 5;lars;larsenigen;2005;true;true;false;noDiscipline;4.9;true;
 6;test;Larsen;2007;false;false;true;Crawl;0.0;true;
 7;hej';igen;1000;false;false;true;Breaststroke;0.0;true;
-8;Lau;riii;2001;true;false;true;Butterfly;0.0;true;
-9;hej;hej;1234;false;false;true;Crawl;0.0;true;
+8;Lau;riii;2001;true;false;true;Butterfly;8.9;true;
+9;hej;hej;1234;false;false;true;Crawl;14.0;true;
 10;ikke;betalt mand;1234;false;true;false;noDiscipline;0.0;true;
 11;ikke;betalt;1234;false;true;false;noDiscipline;0.0;false;
 12;gf;gf;1234;true;true;false;noDiscipline;0.0;false;
