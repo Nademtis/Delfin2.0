@@ -18,7 +18,7 @@ public class Chairman {
                     createMember();
                     break;
                 case 2:
-                    checkMember();
+                    filehandler.checkMember();
                     break;
                 case 3:
                     getFitnessMembers();
@@ -40,19 +40,6 @@ public class Chairman {
         int newId = filehandler.nextAvailableMemberId();
         filehandler.saveNewMemberInFile(userInputForNewMember());
         System.out.println("New member was added with the ID:" + newId);
-    }
-
-    public void checkMember() {
-        ArrayList<Member> memberList = filehandler.getAllMembersList();
-        int memberId;
-
-        System.out.println("Write the MemberID:");
-        memberId = in.nextInt();
-        try {
-            System.out.println(memberList.get(memberId));
-        } catch (Exception e) {
-            System.out.println("ID: " + memberId + " is invalid or not in the system.");
-        }
     }
 
     public void getFitnessMembers() {
@@ -101,8 +88,6 @@ public class Chairman {
         return newMemberData;
 
     }
-
-
 
     private String compChoice() {
         String choice = "";

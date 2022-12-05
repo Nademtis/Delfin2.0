@@ -172,6 +172,19 @@ public class Filehandler {
         }
     }
 
+    public void checkMember() {
+        ArrayList<Member> memberList = getAllMembersList();
+        int memberId;
+
+        System.out.println("Write the MemberID:");
+        memberId = in.nextInt();
+        try {
+            System.out.println(memberList.get(memberId));
+        } catch (Exception e) {
+            System.out.println("ID: " + memberId + " is invalid or not in the system.");
+        }
+    }
+
     private void editFile(int tokenIndex, String newData, List<String> list, int memberId) throws IOException {
 
         List<String> lines = Files.readAllLines(Path.of("memberData.txt"));
